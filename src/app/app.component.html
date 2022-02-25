@@ -1,0 +1,22 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div>
+  <table border = "2">
+    <tr>
+      <th>num</th>
+      <th>par ou impar</th>
+    </tr>
+
+    <tr *ngFor="let n of getNumbers()"> <!-- repetição -->
+      <td>{{ n }}</td>
+      <td> <!-- If -->
+        <span *ngIf="n % 2 == 0">par</span>
+        <span *ngIf="n % 2 !== 0">impar</span>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<!-- Repetição e If exemplos -->
